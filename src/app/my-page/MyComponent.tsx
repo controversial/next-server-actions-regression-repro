@@ -1,6 +1,7 @@
-import { action3 } from './actions';
+import React from 'react';
+import { action2 } from './actions';
 
 export default function MyComponent() {
-  console.log('MyComponent imported action3', action3); // to prevent tree-shaking
+  console.log(action2, 'will not be tree-shaken because of this console log');
   return <span>i’m MyComponent</span>;
 }
